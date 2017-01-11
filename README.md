@@ -130,8 +130,6 @@ public String orderName;
 
 参数和局部变量名首字母小写，骆驼法则。尽量不要和域冲突，尽量表达这个变量在方法中的意义。
 
-
-
 ##2 代码格式
 
 用空格字符缩进源代码，不要用tab，每个缩进4个空格。
@@ -147,6 +145,8 @@ public String orderName;
 ###2.3 包的导入
 
 删除不用的导入，尽量不要使用整个包的导入。在eclipse下经常使用快捷键 ctrl+shift+o 修正导入。
+import不要使用通配符
+即，不要出现类似这样的import语句：import java.util.*;
 
 ###2.4 类格式
 
