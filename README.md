@@ -1,8 +1,5 @@
 #Java代码规范
 
-> 本Java代码规范以SUN的标准Java代码规范为基础，为适应公司的实际需要，可能会做一些修改。本文档中没有说明的地方，请参看SUN Java标准代码规范。如果两边有冲突，以本文档为准。
-
-
 ##目录
 
 * [标识符命名规范](#1-标识符命名规范)
@@ -28,11 +25,11 @@
 Java中，除了包名，静态常量等特殊情况，大部分情况下标识符使用骆驼法则，即单词之间不使用特殊符号分割，而是通过首字母大写来分割。比如: SupplierName, addNewContract，而不是 supplier_name, add_new_contract。
 
 ####1.1.5 英文 vs 拼音
-尽量使用通俗易懂的英文单词，如果不会可以向队友求助，实在不行则使用汉语拼音，避免拼音与英文混用。比如表示归档，用archive比较好, 用pigeonhole则不好，用guiDang尚可接受。
+尽量使用通俗易懂的英文单词，如果不会可以向队友求助或者使用网络翻译，不要使用汉语拼音。比如表示归档，用archive比较好, 用pigeonhole则不好，用guiDang则不可接受。
 
 ###1.2 包名
 使用小写字母如 com.xxx.settlment，不要 com.xxx.Settlement
-单词间不要用字符隔开，比如 com.xxx.settlment.jsfutil，而不要com.xxx.settlement.jsf_util
+单词间不要用字符（比如下划线_）隔开，比如 com.xxx.settlment.jsfutil，而不要com.xxx.settlement.jsf_util
 
 ###1.3 类名
 
@@ -129,7 +126,7 @@ public enum Events {
 public String orderName;
 ```
 
-###1.6 局部变量名
+###1.6 参数和局部变量名
 
 参数和局部变量名首字母小写，骆驼法则。尽量不要和域冲突，尽量表达这个变量在方法中的意义。
 
